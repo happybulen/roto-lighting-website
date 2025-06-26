@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Award, Bolt, Flag } from "lucide-react";
-import facilityImage from "@assets/thumbnail_IMG_5402_1750951288347.jpg";
+// Using placeholder image for deployment
+const facilityImage = "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=600&h=400&fit=crop";
 
 export default function ExperienceSection() {
   return (

@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Phone, Mail } from "lucide-react";
 import { useMutation } from "@tanstack/react-query";
 import { useToast } from "@/hooks/use-toast";
-import heroImage from "@assets/IMG_5127_1750950989223.jpg";
+const heroImage = "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&h=600&fit=crop";
 
 export default function HeroSection() {
   const [email, setEmail] = useState("");

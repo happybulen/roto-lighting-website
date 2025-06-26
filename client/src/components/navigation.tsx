@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useLocation } from "wouter";
-import rotoLogo from "@assets/rotologo_1750950303711.png";
+const rotoLogo = "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=200&h=80&fit=crop";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

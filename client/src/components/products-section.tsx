@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Home, Building, Trees, Users } from "lucide-react";
-import product1 from "@assets/4_1750953287936.jpg";
-import product2 from "@assets/3_1750953287936.jpg";
-import product3 from "@assets/6_1750953287938.jpg";
-import product4 from "@assets/2_1750953287937.jpg";
+const product1 = "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=400&h=300&fit=crop";
+const product2 = "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=400&h=300&fit=crop";
+const product3 = "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=300&fit=crop";
+const product4 = "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=400&h=300&fit=crop";
 
 export default function ProductsSection() {
   const scrollToContact = () => {

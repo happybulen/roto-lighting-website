@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Cog, DollarSign, Calendar, ArrowRight, Check } from "lucide-react";
-import servicesImage from "@assets/1_1750953287937.jpg";
+const servicesImage = "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600&h=400&fit=crop";
 
 export default function ServicesSection() {
   const scrollToContact = () => {
