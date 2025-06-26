@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(210, 100%, 98%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* Custom colors for Roto Lighting */
+  --primary-blue: hsl(223, 87%, 40%);
+  --accent-blue: hsl(223, 87%, 50%);
+  --dark-blue: hsl(223, 87%, 30%);
+  --light-gray: hsl(220, 13%, 97%);
+  --medium-blue: hsl(223, 87%, 35%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(210, 100%, 98%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-primary-blue {
+    color: hsl(223, 87%, 40%);
+  }
+  
+  .text-accent-blue {
+    color: hsl(223, 87%, 50%);
+  }
+  
+  .text-dark-blue {
+    color: hsl(223, 87%, 30%);
+  }
+  
+  .text-medium-blue {
+    color: hsl(223, 87%, 35%);
+  }
+  
+  .bg-primary-blue {
+    background-color: hsl(223, 87%, 40%);
+  }
+  
+  .bg-accent-blue {
+    background-color: hsl(223, 87%, 50%);
+  }
+  
+  .bg-dark-blue {
+    background-color: hsl(223, 87%, 30%);
+  }
+  
+  .bg-medium-blue {
+    background-color: hsl(223, 87%, 35%);
+  }
+  
+  .bg-light-gray {
+    background-color: hsl(220, 13%, 97%);
+  }
+  
+  .border-primary-blue {
+    border-color: hsl(223, 87%, 40%);
+  }
+  
+  .hover\:bg-dark-blue:hover {
+    background-color: hsl(223, 87%, 30%);
+  }
+  
+  .hover\:bg-medium-blue:hover {
+    background-color: hsl(223, 87%, 35%);
+  }
+  
+  .hover\:text-primary-blue:hover {
+    color: hsl(223, 87%, 40%);
+  }
+}

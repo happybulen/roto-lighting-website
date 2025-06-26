@@ -1,0 +1,18 @@
+# Cloudflare Pages configuration
+name = "roto-lighting"
+compatibility_date = "2024-12-26"
+pages_build_output_dir = "dist/public"
+
+[env.production]
+# Production environment variables will be set in Cloudflare dashboard
+vars = { NODE_ENV = "production" }
+
+# Database and API configurations for Cloudflare Pages Functions
+[[env.production.kv_namespaces]]
+binding = "CACHE"
+id = "" # Add your KV namespace ID here
+
+# Configure build settings
+[build]
+command = "npm run build"
+cwd = "."

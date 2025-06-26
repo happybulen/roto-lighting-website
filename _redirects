@@ -1,0 +1,14 @@
+# Cloudflare Pages redirects file
+# This handles client-side routing for the React app
+
+# API routes - these need to be handled by your separate API server
+# Replace 'your-api-server.com' with your actual API server URL
+/api/* https://your-api-server.com/api/:splat 200
+
+# Handle client-side routing
+/blog/* /index.html 200
+/admin/* /index.html 200
+/login /index.html 200
+
+# Fallback for all other routes
+/* /index.html 200
