@@ -6,6 +6,10 @@ import { existsSync } from 'fs';
 console.log('🏗️  Building Roto Lighting website...');
 
 try {
+  // Install dependencies first
+  console.log('📋 Installing dependencies...');
+  execSync('npm ci', { stdio: 'inherit' });
+  
   // Build frontend
   console.log('📦 Building frontend...');
   execSync('npx vite build', { stdio: 'inherit' });
